@@ -1,0 +1,6 @@
+name: Call the CICD workflow
+on: push
+jobs:
+  callCICD:
+   uses: ./.github/workflows/main.yml
+   secrets: inherit
